@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+
+<style>
+    .texto{
+        background-color: tomato;
+        color: aliceblue;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <h1>Aula de JS</h1>
+    <p class="texto" id="textoPersonalizado">Aqui vai meu texto personalizado</p>
+    <p>aqui não pode mudar o texto...</p>
+
+    <script>
+        console.log("Aqui eu tenho um texto top!!!")
+
+        // Operadores aritmeticos
+        // + mais
+        // - menos
+        // / divisão
+        // * vezes
+
+        numero = 1
+        texto = "texto"
+        numeroQuebrado = 6.8
+        verdadeiroFalso = false
+
+        console.log(numero, texto, numeroQuebrado, verdadeiroFalso)
+        console.log(8 + parseInt("2"))
+
+        // Operados lógicos
+        // == igual
+        // != diferente
+        // > maior
+        // < menor
+        // >= maior igual
+        // <= menor igual
+        // && E; and
+        // || OU; or
+
+        console.log(1 === "1")
+        console.log(1 !== "1")
+
+        if (1 == 2) {
+            console.log("Estou dentro do IF")
+        } else if (2 == 2) {
+            console.log("Estou dentro do ELSE")
+        } else {
+            console.log("Estou dentro do ELSE")
+        }
+
+        for (i = 0; i < 5; i++) {
+            console.log("Valor de i: " + i)
+        }
+
+        contador = 0
+        while (contador < 10) {
+            contador++
+            if (contador == 7) {
+                continue // continue o código mas não mostre esse número
+            }
+            if (contador == 5) {
+                break // quando o contador for igual a 5 ele para
+            }
+            console.log("valor do contador: " + contador)
+        }
+
+        alert("Deseja continuar?") // aparece uma box de mensagem 
+
+        // adicionar uma função
+        function funcaoTop() {
+            alert("Minha função funcionou!!!")
+        }
+
+        function adicionarTexto() {
+            alert("Deseja adicionar o texto?")
+            // pegar um elemento atravez do ID
+            textoLocal = document.getElementById("textoPersonalizado").innerHTML
+            console.log(textoLocal)
+
+            document.getElementById("textoPersonalizado").innerHTML = "Um texto do balacubaco"
+        }
+
+        funcaoTop() // puxar uma função
+    </script>
+</body>
+
+</html>
