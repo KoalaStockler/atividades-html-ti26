@@ -47,7 +47,25 @@ header {
     max-width: 1200px;
 }
 
+.grid_final {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 25px;
+}
+
 .card {
+    background-color: #ffffff1a;
+    border: 1px solid #ffffff33;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s;
+    backdrop-filter: blur(8px);
+}
+
+.card_final{
     background-color: #ffffff1a;
     border: 1px solid #ffffff33;
     border-radius: 20px;
@@ -62,7 +80,18 @@ header {
     background-color: #00ffff33;
 }
 
+.card_final:hover {
+    transform: scale(1.05);
+    background-color: #00ffff33;
+}
+
 .card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card_final h2 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     font-weight: bold;
@@ -74,7 +103,17 @@ header {
     font-weight: bold;
 }
 
+.card_final a {
+    color: #0ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .card a:hover {
+    text-decoration: underline;
+}
+
+.card_final a:hover {
     text-decoration: underline;
 }
 
