@@ -1,0 +1,47 @@
+/* Remove as margens padrão de todos os elementos */
+* {
+    margin: 0;
+}
+
+/* Container principal com espaço nas laterais e largura de 70% da tela */
+.container {
+    padding: 0 15%;
+    width: 70vw;
+}
+
+/* Ativa o layout em grid e coloca espaço de 10px entre os itens */
+.grid {
+    display: grid;
+    gap: 10px;
+}
+
+/* Cria 4 linhas, cada uma com 200px de altura */
+.linha {
+    grid-template-rows: repeat(4, 200px);
+}
+
+/* Cria 3 colunas do mesmo tamanho */
+.coluna {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Cria 2 colunas: a primeira menor e a segunda maior */
+.coluna-2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Cria 2 colunas: a primeira maior e a segunda menor */
+.coluna-3 {
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Caixa que ocupa toda a célula do grid
+   Tem fundo vermelho, margens, e texto centralizado */
+.box {
+    width: 100%; /* Ocupa toda a largura da célula */
+    height: 100%; /* Ocupa toda a altura da célula */
+    background-color: tomato; /* Cor de fundo vermelha */
+    margin: 10px; /* Espaço ao redor da caixa */
+    text-align: center; /* Centraliza o texto na horizontal */
+    align-content: center; /* Centraliza o conteúdo na vertical (em grid) */
+}
