@@ -1,0 +1,53 @@
+.quadrado{
+    height: 370px;
+    width: 270px;
+ 
+    /* margin: 10px 20px 20px 100px; */
+    margin-top: 10px;
+    margin-left:100px;
+    margin-right:20px;
+    margin-bottom: 30px;
+ 
+    padding: 10px;
+   
+    background-color: #606060;
+    color: white;
+    border-radius: 20px;
+    border: 5px solid black;
+    text-align: center;
+   
+    font-family:Arial, Helvetica, sans-serif;
+}
+.quadrado:hover{
+    transition-duration: width 0.5s, height 0.5s, background-color 0.5s;
+    background-color: #808080;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+    border: none;
+}
+ 
+.quadrado p{
+    font-size: 16px;
+}
+.quadrado a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: lowercase;
+    background-color:black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.quadrado a:hover{
+    background-color: #ededed;
+    color: black;
+    border: 3px solid black;
+    transition: 0.5s
+}
+
+.grade{
+    /*  */
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 500px 500px 500px;
+}
