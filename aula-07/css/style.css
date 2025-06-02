@@ -82,17 +82,32 @@
 .grid-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     padding: 20px 10% 5px 10%;
 }
 
-.box {
-    height: 280px;
-    width: 200px;
-    background-color: tomato;
-    border-radius: 15px;
-    text-align: center;
-    align-content: center;
-    margin: auto;
+.produtos figure{
+    height: 380px;
+    width: 220px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.produtos figure>img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.produtos figure>figcaption>p {
+    width: 100%;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
